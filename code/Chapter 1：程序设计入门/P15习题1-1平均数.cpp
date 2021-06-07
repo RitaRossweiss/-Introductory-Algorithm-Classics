@@ -1,3 +1,4 @@
+// 输入3个整数，输出它们的平均值，保留3位小数。
 #include<stdio.h>
 int main(){
     double a,b,c;

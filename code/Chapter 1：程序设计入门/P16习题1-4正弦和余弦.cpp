@@ -1,3 +1,5 @@
+// 输入正整数n（n＜360），输出n度的正弦、余弦函数值。提示：使用数学函数。
+
 #include<stdio.h>
 #include<math.h>
 int main(){

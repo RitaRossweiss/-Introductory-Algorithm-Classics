@@ -1,3 +1,6 @@
+
+// 输入年份，判断是否为闰年。如果是，则输出yes，否则输出no。
+
 #include<stdio.h>
 int main(){
     int year;
