@@ -17,7 +17,7 @@ int main(){
     while (scanf("%d%d%d",&a,&b,&c)==3 && a && b && c)
     {
         printf("Case %d: %d.",++Case,a/b); //先打出整数位
-        for (int i = 0; i < c; i++)
+        for (int i = 1; i < c; i++)
         {
             a*=10;
             dec = a/b;
