@@ -8,7 +8,7 @@
  * Case 1: 0.1667
  */
 
-//1.不使用输出格式去控制小数位数
+//1.不使用输出格式去控制小数位数(这种方法输出的是一串数字而不是一个整数，从开发角度而言是不合适的，但判题系统大概率能过)
 #include<stdio.h>
 #include<math.h>
 int main(){
@@ -17,19 +17,20 @@ int main(){
     while (scanf("%d%d%d",&a,&b,&c)==3 && a && b && c)
     {
         printf("Case %d: %d.",++Case,a/b); //先打出整数位
-        for (int i = 1; i < c; i++)
+        while (c>1) //用循环输出中间位
         {
             a*=10;
             dec = a/b;
             printf("%d",dec % 10); //打出中间的数字
+            c--;
         }
         dec = round(double(a)*10/b);
-        printf("%d",dec % 10); //打出最后一位
+        printf("%d",dec % 10); //打出最后一位并四舍五入
     }
     return 0;
 }
 
-// 2.使用变量去控制小数位数, 但这种方法小数位较长时就不精确了，所以并不适用此题
+// 2.使用变量去控制小数位数(代码虽然简单，但这种方法小数位较长时就不精确了,故不推荐)
 // #include<stdio.h>
 // int main(){
 //     long long a,b;
