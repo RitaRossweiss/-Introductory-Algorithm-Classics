@@ -1,5 +1,7 @@
 #include<stdio.h>
 int main(){
-    printf("Fuck word");
+    int num;
+    printf("hhhhh");
+    
     return 0;
 }
